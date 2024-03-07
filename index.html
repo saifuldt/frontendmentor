@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+  <title>Frontend Mentor | Recipe page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    * {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+
+    @media screen and (max-width: 375px){
+
+  body {
+      /* width: 1440px; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* background-color: hsl(330, 100%, 96%); */
+      font-family: "Outfit", serif;
+    }
+
+    .container {
+      width: 100%;
+      background-color: white;
+      padding: 0;
+      border-radius: 10px;
+      margin: 0;
+    }
+
+    .container h1 {
+      font-family: "Young", serif;
+      font-weight: 700;
+      font-size: 50px;
+      color: hsl(24, 5%, 18%);
+      font-size: 20px;
+    }
+
+    .container p,
+    .nav {
+      width: 100%;
+      color: hsl(20, 2%, 38%);
+      font-family: "Outfit", serif;
+      font-size: 16px;
+      font-weight: 400;
+    }
+    
+    .coock-items h4,
+    .instruction li::marker,
+    .cocking h3,
+    .instruction h3,
+    .vitamin h3,
+    .item span {
+      color: hsl(14, 45%, 36%);
+      font-family: "Young", serif;
+      margin-bottom: 10px;
+    }
+
+    .coock-items h4,
+    .cocking h3,
+    .instruction h3,
+    .vitamin h3 {
+      margin-left: -20px;
+    }
+
+    .nav li {
+      margin-bottom: 7px;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+}
+
+@media screen and (min-width: 376px) {
+  
+  body {
+      /* width: 1440px; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: hsl(330, 100%, 96%);
+      font-family: "Outfit", serif;
+    }
+
+    .container {
+      width: 1440px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 150px;
+    }
+
+    .container h1 {
+      font-family: "Young", serif;
+      font-weight: 700;
+      font-size: 50px;
+      color: hsl(24, 5%, 18%);
+    }
+
+    .container p,
+    .nav {
+      color: hsl(20, 2%, 38%);
+      font-family: "Outfit", serif;
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    .coock-items {
+      background-color: hsl(330, 100%, 98%);
+    }
+
+    .coock-items h4,
+    .instruction li::marker,
+    .cocking h3,
+    .instruction h3,
+    .vitamin h3,
+    .item span {
+      color: hsl(14, 45%, 36%);
+      font-family: "Young", serif;
+      margin-bottom: 10px;
+    }
+
+    .coock-items h4,
+    .cocking h3,
+    .instruction h3,
+    .vitamin h3 {
+      margin-left: -20px;
+    }
+
+    .nav li {
+      margin-bottom: 7px;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+}
+
+    
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="head p-3">
+      <img class="rounded-md " src="./assets/images/image-omelette.jpeg" alt="">
+      <h1>Simple Omelette Recipe</h1>
+
+      <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked
+        to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+    </div>
+
+    <div class="coock-items p-7 m-6  rounded-md">
+      <ul class="list-disc nav">
+        <h4 class="text-xl font-bold ">Preparation time</h4>
+        <li><strong>Total:</strong> Approximately 10 minutes</li>
+        <li><strong>Preparation:</strong> 5 minutes</li>
+        <li> <strong>Cooking:</strong> 5 minutes</li>
+      </ul>
+
+    </div>
+
+    <div class="cocking p-4 ml-3 border-b-2 border-solid border-gray-200">
+      <ul class="list-disc nav">
+        <h3 class="text-2xl font-bold">Ingredients</h3>
+        <li>2-3 large eggs</li>
+        <li>Salt, to taste</li>
+        <li>Pepper, to taste</li>
+        <li>1 tablespoon of butter or oil</li>
+        <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+      </ul>
+    </div>
+
+    <div class="instruction p-4 ml-3">
+      <ol class="list-decimal nav">
+        <h3 class="text-2xl font-bold">Instructions</h3>
+        <li><strong>Beat the eggs:</strong> In a bowl, beat the eggs with a pinch of salt and pepper until they are well
+          mixed.
+          You can add a tablespoon of water or milk for a fluffier texture.</li>
+        <li><strong> Heat the pan:</strong> Place a non-stick frying pan over medium heat and add butter or oil.</li>
+        <li><strong>Cook the omelette:</strong> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan
+          to ensure
+          the eggs evenly coat the surface.</li>
+        <li><strong>Add fillings (optional):</strong> When the eggs begin to set at the edges but are still slightly
+          runny in the
+          middle, sprinkle your chosen fillings over one half of the omelette.</li>
+        <li><strong>Fold and serve:</strong> As the omelette continues to cook, carefully lift one edge and fold it over
+          the
+          fillings. Let it cook for another minute, then slide it onto a plate.</li>
+        <li><strong>Enjoy:</strong> Serve hot, with additional salt and pepper if needed.</li>
+      </ol>
+    </div>
+
+    <div class="vitamin p-4 ml-3">
+
+      <h3 class="text-3xl font-bold">Nutrition</h3>
+      <p>The table below shows nutritional values per serving without the additional fillings.</p>
+      <div class="p-4 ">
+      <div class="">
+        <table class="table-fixed  w-full " >
+          <tr class="border-b-2 ">
+            <td class="text-lg h " style="height:60px; color: hsl(20, 2%, 38%); font-family: Outfit, serif;"><span style="width: 2px; margin-left: 30px;"></span>Calories</td>
+            <td  style="height:60px; color: hsl(14, 45%, 36%); font-weight: 800;"  >277kcal</td>
+          </tr>
+          <tr class="border-b-2">
+            <td class="text-lg " style="color: hsl(20, 2%, 38%); font-family: Outfit, serif; height:60px;"> <span style="width: 2px; margin-left: 30px;"></span>Carbs</td>
+            <td  style=" color: hsl(14, 45%, 36%); height:60px; font-weight: 800;"  >0g</td>
+          </tr>
+          <tr class="border-b-2">
+            <td class="text-lg " style="color: hsl(20, 2%, 38%); height:60px; font-family: Outfit, serif;"><span style="width: 2px; margin-left: 30px;"></span>Protein</td>
+            <td  style=" color: hsl(14, 45%, 36%); height:60px; font-weight: 800;"  >20g</td>
+          </tr>
+          <tr class="">
+            <td class="text-lg " style="color: hsl(20, 2%, 38%); font-family: Outfit, serif; height:60px;"><span style="width: 2px; margin-left: 30px;"></span>Fat</td>
+            <td  style="height:60px; color: hsl(14, 45%, 36%); font-weight: 800;"  >22g</td>
+          </tr>
+        </table>
+      </div>
+      
+
+    </div>
+
+    <footer>
+      <div class="attribution font-bold pt-4">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Saiful Islam</a>.
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
